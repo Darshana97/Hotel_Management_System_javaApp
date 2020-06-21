@@ -55,8 +55,10 @@ public class Login extends JFrame {
         l3.setBounds(350, 10, 200, 200);
         add(l3);
         
+        getContentPane().setBackground(Color.WHITE);
+        
         setLayout(null);
-        setBounds(500, 300, 600, 400);
+        setBounds(600, 300, 600, 300);
         setVisible(true);
     }
     
