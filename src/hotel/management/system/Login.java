@@ -15,8 +15,15 @@ public class Login extends JFrame {
     
     Login(){
         l1 = new JLabel("Username");
+        l1.setBounds(40, 20, 100, 30);
+        add(l1);
         
         setBounds(500, 300, 600, 400);
+        setVisible(true);
+    }
+    
+    public static void main(String[] args) {
+       new Login();
     }
     
 }
