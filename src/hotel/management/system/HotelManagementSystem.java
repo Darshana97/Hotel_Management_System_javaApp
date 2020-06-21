@@ -3,6 +3,7 @@ package hotel.management.system;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -23,6 +24,9 @@ public class HotelManagementSystem extends JFrame {
         l2.setForeground(Color.WHITE);
         l2.setFont(new Font("serif", Font.PLAIN, 70));
         l1.add(l2);
+        
+        JButton b1 = new JButton("Next");
+        b1.setBackground(Color.BLACK);
         
         setLayout(null);
         setVisible(true);
