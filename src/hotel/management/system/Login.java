@@ -35,10 +35,16 @@ public class Login extends JFrame {
         add(t2);
         
         b1 = new JButton("Login");
-        b1.setBackground(Color.BLACK);
+        b1.setBackground(Color.BLUE);
         b1.setForeground(Color.WHITE);
         b1.setBounds(40, 150, 120, 30);
         add(b1);
+        
+        b2 = new JButton("Cancel");
+        b2.setBounds(180, 150, 120, 30);
+        b2.setBackground(Color.red);
+        b2.setForeground(Color.WHITE);
+        add(b2);
         
         setLayout(null);
         setBounds(500, 300, 600, 400);
