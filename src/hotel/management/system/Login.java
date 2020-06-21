@@ -1,6 +1,7 @@
 
 package hotel.management.system;
 
+import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,6 +33,12 @@ public class Login extends JFrame {
         t2 = new JPasswordField();
         t2.setBounds(150, 70, 150, 30);
         add(t2);
+        
+        b1 = new JButton("Login");
+        b1.setBackground(Color.BLACK);
+        b1.setForeground(Color.WHITE);
+        b1.setBounds(40, 150, 120, 30);
+        add(b1);
         
         setLayout(null);
         setBounds(500, 300, 600, 400);
