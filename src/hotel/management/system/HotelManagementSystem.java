@@ -28,7 +28,7 @@ public class HotelManagementSystem extends JFrame {
         JButton b1 = new JButton("Next");
         b1.setBackground(Color.WHITE);
         b1.setForeground(Color.BLACK);
-        b1.setBounds(1030, 430, 150, 30);
+        b1.setBounds(1150, 450, 150, 50);
         l1.add(b1);
         
         setLayout(null);
