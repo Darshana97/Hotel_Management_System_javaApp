@@ -29,6 +29,10 @@ public class Login extends JFrame {
         t1.setBounds(150, 20, 150, 30);
         add(t1);
         
+        t2 = new JPasswordField();
+        t2.setBounds(150, 70, 150, 30);
+        add(t2);
+        
         setLayout(null);
         setBounds(500, 300, 600, 400);
         setVisible(true);
