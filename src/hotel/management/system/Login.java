@@ -2,6 +2,8 @@
 package hotel.management.system;
 
 import java.awt.Color;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -45,6 +47,13 @@ public class Login extends JFrame {
         b2.setBackground(Color.red);
         b2.setForeground(Color.WHITE);
         add(b2);
+        
+        ImageIcon i1 =new ImageIcon(ClassLoader.getSystemResource("hotel/management/system/icons/second.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+        ImageIcon i3 = new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(350, 10, 200, 200);
+        add(l3);
         
         setLayout(null);
         setBounds(500, 300, 600, 400);
