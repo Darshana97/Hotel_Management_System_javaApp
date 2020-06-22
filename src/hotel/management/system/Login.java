@@ -85,9 +85,10 @@ public  class Login extends JFrame implements ActionListener{
               
               if(rs.next()){
                   new HotelManagementSystem().setVisible(true);
-                  this.setVisible(false);
+                  this.setVisible(true);
               }else{
                   JOptionPane.showMessageDialog(null, "Invalid username and password");
+                  this.setVisible(false);
               }
               
             } catch (Exception e) {
