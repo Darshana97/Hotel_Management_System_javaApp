@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -74,6 +75,15 @@ public  class Login extends JFrame implements ActionListener{
         if (ae.getSource()==b1) {
            String username =  t1.getText();
            String password = t2.getText();
+           conn c = new conn();
+           
+           String str = "select * from login where username ='"+username+"' and password = '"+password+"'";
+           
+            try {
+              ResultSet rc =  c.s.executeQuery(str);  
+            } catch (Exception e) {
+            }
+           
         }else if(ae.getSource()==b2){
             System.exit(0);
         }
