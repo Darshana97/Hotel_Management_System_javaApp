@@ -3,6 +3,7 @@ package hotel.management.system;
 
 import java.awt.Color;
 import java.awt.Image;
+import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,7 +12,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 
-public class Login extends JFrame {
+public abstract class Login extends JFrame implements ActionListener{
     
     JLabel l1,l2;
     JTextField t1;
@@ -40,12 +41,14 @@ public class Login extends JFrame {
         b1.setBackground(Color.BLUE);
         b1.setForeground(Color.WHITE);
         b1.setBounds(40, 150, 120, 30);
+        b1.addActionListener(this);
         add(b1);
         
         b2 = new JButton("Cancel");
         b2.setBounds(180, 150, 120, 30);
         b2.setBackground(Color.red);
         b2.setForeground(Color.WHITE);
+        b2.addActionListener(this);
         add(b2);
         
         ImageIcon i1 =new ImageIcon(ClassLoader.getSystemResource("hotel/management/system/icons/second.jpg"));
