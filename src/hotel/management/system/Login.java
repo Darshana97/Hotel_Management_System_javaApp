@@ -10,6 +10,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
@@ -85,6 +86,8 @@ public  class Login extends JFrame implements ActionListener{
               if(rs.next()){
                   new HotelManagementSystem().setVisible(true);
                   this.setVisible(false);
+              }else{
+                  JOptionPane.showMessageDialog(null, "Invalid username and password");
               }
               
             } catch (Exception e) {
