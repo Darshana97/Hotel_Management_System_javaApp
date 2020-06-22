@@ -73,6 +73,8 @@ public  class Login extends JFrame implements ActionListener{
         
         if (ae.getSource()==b1) {
             
+        }else if(ae.getSource()==b2){
+            System.exit(0);
         }
         
     }
