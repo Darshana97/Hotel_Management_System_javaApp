@@ -80,7 +80,13 @@ public  class Login extends JFrame implements ActionListener{
            String str = "select * from login where username ='"+username+"' and password = '"+password+"'";
            
             try {
-              ResultSet rc =  c.s.executeQuery(str);  
+              ResultSet rs =  c.s.executeQuery(str); 
+              
+              if(rs.next()){
+                  new HotelManagementSystem().setVisible(true);
+                  this.setVisible(false);
+              }
+              
             } catch (Exception e) {
             }
            
