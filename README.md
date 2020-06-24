@@ -1,1 +1,1 @@
-# Hotel_Management_System_javaApp
+# Hotel Management System Using java and Mysql
